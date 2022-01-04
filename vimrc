@@ -18,7 +18,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Plugin 'kaicataldo/material.vim'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
-
+Plugin 'https://github.com/tpope/vim-surround.git'
 call vundle#end()
 "########################################################################## 
 
