@@ -72,7 +72,7 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 " configure editor with tabs and nice stuff...
 " --------------------------------------------------------------------------------
 set expandtab           " enter spaces when tab is pressed
-set textwidth=120       " break lines when line length increases
+" set textwidth=120       " break lines when line length increases
 set tabstop=4           " use 4 spaces to represent tab
 set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
@@ -88,18 +88,39 @@ set showcmd             " show (partial) command in status line
 " ------------------------------------------------------------------------- 
 " Python
 au BufNewFile,BufRead *.py
-    \ | set tabstop=4
-    \ | set softtabstop=4
-    \ | set shiftwidth=4
-    \ | set textwidth=75
-    \ | set expandtab
-    \ | set autoindent
+    \ set tabstop=4       |
+    \ set softtabstop=4   |
+    \ set shiftwidth=4    |
+    \ set textwidth=75    |
+    \ set expandtab       |
+    \ set autoindent      |
     "\ | set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ | set tabstop=2
-    \ | set softtabstop=2
-    \ | set shiftwidth=2
+"au BufNewFile,BufRead *.js *.html *.css
+au BufNewFile,BufRead *.html
+    \ set tabstop=2      |
+    \ set softtabstop=2  |
+    \ set shiftwidth=2   |
+    \ set textwidth=75   |
+    \ set expandtab      |
+    \ set autoindent     |
+    "\ | set fileformat=unix
+au BufNewFile,BufRead *.js
+    \ set tabstop=2      |
+    \ set softtabstop=2  |
+    \ set shiftwidth=2   |
+    \ set textwidth=75   |
+    \ set expandtab      |
+    \ set autoindent     |
+    "\ | set fileformat=unix
+au BufNewFile,BufRead *.css
+    \ set tabstop=2      |
+    \ set softtabstop=2  |
+    \ set shiftwidth=2   |
+    \ set textwidth=75   |
+    \ set expandtab      |
+    \ set autoindent     |
+    "\ | set fileformat=unix
 
 
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
